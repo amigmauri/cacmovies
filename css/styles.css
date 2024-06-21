@@ -55,20 +55,6 @@ body{
     box-shadow: none;
 }
 
-.dropdown-menu{
-    padding: .5rem;
-}
-
-.dropdown-menu ul{
-    list-style: none;
-    padding: 0;
-}
-
-.dropdown-menu.show{
-    display: flex;
-    justify-content: center;
-}
-
 
 /* header */
 .header{
@@ -154,19 +140,12 @@ body{
         padding: 0 1rem;
     }
 
-    .footer-item-1, .footer-item-2{
-        flex-basis: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-item-3{
+    .footer-item-1, .footer-item-2, .footer-item-3{
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 4rem;
+        text-align: center;
+        margin-top: 1rem;
     }
 }
