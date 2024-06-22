@@ -21,579 +21,521 @@
 </head>
 
 <body>
-    <div class="navbar-container py-2">
-        <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large" data-bs-theme="dark">
-            <div class="container-xxl">
-                <h1 class="logo">
-                    <a href="index.html" class="navbar-brand d-flex fs-4 fw-bold text-decoration-none">
-                        <span class="text-info fw-bolder"><i class="bi bi-film pe-1"></i>CAC</span><span
-                            class="fw-bolder text-light">Movies</span>
-                    </a>
-                </h1>
+    <nav class="navbar-container navbar navbar-expand-lg fixed-top py-3" data-bs-theme="dark">
+        <div class="container-lg">
+            <h1 class="m-0">
+                <a href="index.html" class="navbar-brand d-flex fs-4 fw-bold text-decoration-none">
+                    <span class="text-info fw-bolder">MY</span><span class="fw-bolder text-light">Movies</span>
+                </a>
+            </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-                    aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="collapse navbar-collapse justify-content-end gap-3" id="navbarsExample07">
 
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
-                    aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title fw-bolder" id="offcanvasNavbar2Label">Menú</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                <form role="search">
+                    <div class="input-group input-busqueda">
+                        <input type="search" class="form-control" placeholder="Buscar película...">
+                        <button class="btn btn-secondary"><i class="bi bi-search"></i></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-start flex-grow-1">
-                            <li class="nav-item me-3">
-                                <a class="nav-link text-light fw-bold" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown me-3">
-                                <a class="nav-link dropdown-toggle text-light fw-bold" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Tendencias</a></li>
-                                    <li><a class="dropdown-item" href="#">Aclamadas</a></li>
-                                    <li><a class="dropdown-item" href="#">Estrenos</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light fw-bold" href="#" data-bs-toggle="dropdown" aria-expanded="false">Géneros</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Acción</a></li>
-                                    <li><a class="dropdown-item" href="#">Animación</a></li>
-                                    <li><a class="dropdown-item" href="#">Aventura</a></li>
-                                    <li><a class="dropdown-item" href="#">Bélico</a></li>
-                                    <li><a class="dropdown-item" href="#">Biopic</a></li>
-                                    <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
-                                    <li><a class="dropdown-item" href="#">Comedia</a></li>
-                                    <li><a class="dropdown-item" href="#">Documental</a></li>
-                                    <li><a class="dropdown-item" href="#">Drama</a></li>
-                                    <li><a class="dropdown-item" href="#">Infantil</a></li>
-                                    <li><a class="dropdown-item" href="#">Musical</a></li>
-                                    <li><a class="dropdown-item" href="#">Romance</a></li>
-                                    <li><a class="dropdown-item" href="#">Suspenso</a></li>
-                                    <li><a class="dropdown-item" href="#">Terror</a></li>
-                                    <li><a class="dropdown-item" href="#">Western</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="d-flex justify-content-center align-items-center gap-3 mt-5 mt-lg-0">
-                            <button class="btn btn-outline-light">Iniciar sesión</button>
-                            <button class="btn btn-info">Registrate</button>
-                        </div>
-                    </div>
-                </div>
+                </form>
+
+                <button class="btn btn-outline-light">Iniciar Sesión</button>
+                <button class="btn btn-info">Registrate</button>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
 
     <!-- main -->
     <main id="main" class="main">
         <!-- seccion principal -->
-        <header class="header">
-            <div class="header-container container-lg d-flex flex-column align-items-center justify-content-center">
-                <h2 class="header-title">Todas tus películas favoritas <br> en un solo lugar</h2>
-                <h3 class="fs-5 py-4">¿Qué estás buscando para ver?</h3>
-                <div class="input-group input-group-lg input-busqueda mb-3" data-bs-theme="dark">
-                    <input type="search" class="form-control" placeholder="Buscar película...">
-                    <button class="btn btn-info"><i class="bi bi-search"></i></button>
+        <header class="header bg-gradient">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-5">
+                        <img src="img/img-header.svg" class="img-header d-block mx-lg-auto img-fluid" alt="Imagen de persona mirando una película" loading="lazy">
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="display-4 fw-bold text-light lh-1 mb-4">Tus películas favoritas en un solo lugar</h2>
+                        <p class="lead mb-4"><small>Disfrutá de las mejores películas de Netflix, 
+                            Amazon Prime Video, Disney+, Apple TV+, Hulu, HBO Max y más.
+                        Registrate y organizá tus películas preferidas.</small></p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-info btn-lg px-4 me-md-2">Registrate</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
 
         <!-- sección tendencias -->
-        <section class="container-xxl section">
-            <div class="d-flex justify-content-center align-items-center">
+        <section class="section">
+            <div class="container-lg">
                 <h3 class="section-title">Tendencias de hoy</h3>
-            </div>
 
-            <div class="row g-4">
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/atlas.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Atlas"></a>
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Atlas</h5>
-                                </div>
-                            </a>
+                <div class="row g-4">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/atlas.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Atlas"></a>
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Atlas</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/badboys.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Bad Boys">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Bad Boys</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/batallaaerea.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Batalla aérea">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Batalla aérea</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/contratodos.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Contra todos">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Contra todos</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/delreves2.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Del revés 2">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Del revés 2</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/dunepartedos.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Dune - Parte dos">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Dune - Parte dos</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/elespecialista.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: El especialista">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">El especialista</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/elreinodelplanetadelossimios.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: El reino del planeta de los simios">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">El reino del planeta de los simios</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/furiosa.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Furiosa">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Furiosa</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/garfieldfueradecasa.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Garfield: la película">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Garfield: la película</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/godzillaminusone.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Godzilla Minus One">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Godzilla Minus One</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgtendencias/godzillaykongelnuevoimperio.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Godzilla y King Kong: el nuevo imperio">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Godzilla y King Kong: el nuevo imperio</h5>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/badboys.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Bad Boys">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Bad Boys</h5>
-                                </div>
-                            </a>
-                        </div>
+                <div class="row">
+                    <div class="col text-center pt-5">
+                        <button class="btn btn-outline-info">Ver más</button>
                     </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/batallaaerea.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Batalla aérea">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Batalla aérea</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/contratodos.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Contra todos">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Contra todos</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/delreves2.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Del revés 2">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Del revés 2</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/dunepartedos.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Dune - Parte dos">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Dune - Parte dos</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/elespecialista.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: El especialista">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">El especialista</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/elreinodelplanetadelossimios.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: El reino del planeta de los simios">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">El reino del planeta de los simios</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/furiosa.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Furiosa">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Furiosa</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/garfieldfueradecasa.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Garfield: la película">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Garfield: la película</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/godzillaminusone.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Godzilla Minus One">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Godzilla Minus One</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgtendencias/godzillaykongelnuevoimperio.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Godzilla y King Kong: el nuevo imperio">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Godzilla y King Kong: el nuevo imperio</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col text-center pt-5">
-                    <button class="btn btn-outline-info">ver más</button>
                 </div>
             </div>
         </section>
 
 
         <!-- sección estrenos -->
-        <section class="container-xxl section">
-            <div class="d-flex justify-content-center align-items-center">
+        <section class="section">
+            <div class="container-lg">
                 <h3 class="section-title">Estrenos más esperados</h3>
-            </div>
 
-            <div class="row g-4">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/estrenos/amigosimaginarios.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Amigos imaginarios"></a>
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Amigos imaginarios</h5>
-                                </div>
-                            </a>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/estrenos/amigosimaginarios.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Amigos imaginarios"></a>
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Amigos imaginarios</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/estrenos/amormentirasysangre.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Amor, mentiras y sangre">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Amor, mentiras y sangre</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/estrenos/asiempezoelsilencio.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Así empezó el silencio">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Así empezó el silencio</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/estrenos/badboys.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Bad Boys">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Bad Boys</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/estrenos/breathe.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Breathe">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Breathe</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/estrenos/chiefofstation.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Chief of Station">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-start">
+                                        <h5 class="card-title fs-6 fw-bold">Chief of Station</h5>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/estrenos/amormentirasysangre.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Amor, mentiras y sangre">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Amor, mentiras y sangre</h5>
-                                </div>
-                            </a>
-                        </div>
+    
+                <div class="row">
+                    <div class="col text-center pt-5">
+                        <button class="btn btn-outline-info">Ver más</button>
                     </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/estrenos/asiempezoelsilencio.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Así empezó el silencio">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Así empezó el silencio</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/estrenos/badboys.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Bad Boys">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Bad Boys</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/estrenos/breathe.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Breathe">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Breathe</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/estrenos/chiefofstation.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Chief of Station">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay d-flex flex-column justify-content-start">
-                                    <h5 class="card-title fs-6 fw-bold">Chief of Station</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col text-center pt-5">
-                    <button class="btn btn-outline-info">ver más</button>
                 </div>
             </div>
         </section>
-
-
+    
+    
         <!-- sección aclamadas -->
-        <section class="container-xxl section">
-            <div class="d-flex justify-content-center align-items-center">
+        <section class="section">
+            <div class="container-lg">
                 <h3 class="section-title">Las más aclamadas</h3>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/12hombressinpiedad.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: 12 Hombres sin piedad">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">12 Hombres sin piedad</h5>
-                                </div>
-                            </a>
+    
+                <div class="row g-4">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/12hombressinpiedad.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: 12 Hombres sin piedad">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">12 Hombres sin piedad</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/batmanelcaballerooscuro.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Batman: el caballero oscuro">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">Batman: el caballero oscuro</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/cadenaperpetua.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Cadena perpetua">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">Cadena perpetua</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/cinemaparadiso.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Cinema Paradiso">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">Cinema Paradiso</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/diwaledulhanialejayenge.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Diwale Hania Le Jayenge">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">Diwale Dulhania Le Jayenge</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/elbuenoelmaloyelfeo.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: El bueno, el malo y el feo">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">El bueno, el malo y el feo</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/elpadrino.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: El Padrino">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">El Padrino</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/elpadrinoparte2.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: El Padrino - Parte 2">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">El Padrino - Parte 2</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/elsenordelosanilloselretornodelrey.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Imagen de la película: El señor de los anillos: el retorno del rey">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">El señor de los anillos: el retorno del rey</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/elviajedechihiro.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: El viaje de Chihiro">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">El viaje de Chihiro</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/forrestgump.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: Forrest Gump">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">Forrest Gump</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                        <div class="container-card">
+                            <div class="card text-bg-dark">
+                                <img src="./img/imgaclamadas/lalistadeschindler.jpg" class="img-fluid rounded"
+                                    alt="Imagen de la película: La lista de Schindler">
+                                <a href="#" class="link-light">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title fs-6 fw-bold">La lista de Schindler</h5>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/batmanelcaballerooscuro.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Batman: el caballero oscuro">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">Batman: el caballero oscuro</h5>
-                                </div>
-                            </a>
-                        </div>
+    
+                <div class="row">
+                    <div class="col text-center pt-5">
+                        <button class="btn btn-outline-info">Ver más</button>
                     </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/cadenaperpetua.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Cadena perpetua">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">Cadena perpetua</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/cinemaparadiso.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Cinema Paradiso">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">Cinema Paradiso</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/diwaledulhanialejayenge.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Diwale Hania Le Jayenge">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">Diwale Dulhania Le Jayenge</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/elbuenoelmaloyelfeo.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: El bueno, el malo y el feo">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">El bueno, el malo y el feo</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/elpadrino.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: El Padrino">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">El Padrino</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/elpadrinoparte2.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: El Padrino - Parte 2">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">El Padrino - Parte 2</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/elsenordelosanilloselretornodelrey.jpg"
-                                class="img-fluid rounded"
-                                alt="Imagen de la película: El señor de los anillos: el retorno del rey">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">El señor de los anillos: el retorno del rey</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/elviajedechihiro.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: El viaje de Chihiro">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">El viaje de Chihiro</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/forrestgump.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: Forrest Gump">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">Forrest Gump</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-sm-4 col-md-3 col-lg-2">
-                    <div class="container-card">
-                        <div class="card text-bg-dark">
-                            <img src="./img/imgaclamadas/lalistadeschindler.jpg" class="img-fluid rounded"
-                                alt="Imagen de la película: La lista de Schindler">
-                            <a href="#" class="link-light">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title fs-6 fw-bold">La lista de Schindler</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col text-center pt-5">
-                    <button class="btn btn-outline-info">ver más</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- sección géneros -->
-        <section class="container-xxl section">
-            <div class="d-flex justify-content-center align-items-center">
-                <h3 class="section-title">Todos los géneros</h3>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col text-center">
-                    <button class="btn btn-outline-light m-2">Acción</button>
-                    <button class="btn btn-outline-light m-2">Animadación</button>
-                    <button class="btn btn-outline-light m-2">Aventura</button>
-                    <button class="btn btn-outline-light m-2">Bélico</button>
-                    <button class="btn btn-outline-light m-2">Biopic</button>
-                    <button class="btn btn-outline-light m-2">Ciencia ficción</button>
-                    <button class="btn btn-outline-light m-2">Comedia</button>
-                    <button class="btn btn-outline-light m-2">Documental</button>
-                    <button class="btn btn-outline-light m-2">Drama</button>
-                    <button class="btn btn-outline-light m-2">Infantil</button>
-                    <button class="btn btn-outline-light m-2">Musical</button>
-                    <button class="btn btn-outline-light m-2">Romance</button>
-                    <button class="btn btn-outline-light m-2">Suspenso</button>
-                    <button class="btn btn-outline-light m-2">Terror</button>
-                    <button class="btn btn-outline-light m-2">Western</button>
                 </div>
             </div>
         </section>
@@ -601,46 +543,41 @@
 
 
     <!-- footer -->
-    <footer>
-        <div class="footer">
-            <div class="container-xxl">
-                <div class="row">
-                    <div class="col col-md-4 mb-sm-5 mb-md-0 footer-item-1">
-                        <h5 class="fw-bold pb-2">Enlaces</h5>
-                        <div class="d-flex flex-column gap-2">
-                            <a class="link-secondary text-decoration-none" href="">Términos de uso</a>
-                            <a class="link-secondary text-decoration-none" href="">Política de privacidad</a>
-                            <a class="link-secondary text-decoration-none" href="">Preguntas frecuentes</a>
-                        </div>
-                    </div>
-
-                    <div class="col col-md-4 mb-sm-5 mb-md-0 footer-item-2">
-                        <h5 class="fw-bold pb-2">Redes sociales</h5>
-                        <ul class="nav d-flex align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link link-secondary fs-5 ps-0 py-0" href="#" target="_blank"><i
-                                        class="bi bi-facebook"></i></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link link-secondary fs-5 ps-1 py-0" href="#"
-                                    target="_blank"><i class="bi bi-twitter-x"></i></a></li>
-                            <li class="nav-item"><a class="nav-link link-secondary fs-5 ps-1 py-0" href="#"
-                                    target="_blank"><i class="bi bi-instagram"></i></a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link link-secondary fs-4 ps-1 pe-0 py-0" href="#"
-                                    target="_blank"><i class="bi bi-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col col-md-4 footer-item-3">
-                        <p class="footer-logo mb-0 text-secondary fs-4 fw-bold"><i class="bi bi-film pe-1"></i><span
-                                class="fw-bolder">CAC</span><span class="fw-bolder">Movies</span></p>
-                        <p class="copy-p text-secondary">Codo a Codo Movies - Desarrollado por <span
-                                class="fw-bold">Mauricio Amigó</span>
+    <footer class="footer">
+        <hr>
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-md-8 footer-item-1">
+                    <div class="d-flex align-items-center gap-3">
+                        <a class="link-secondary text-decoration-none" href="#">Términos de uso</a>
+                        <a class="link-secondary text-decoration-none" href="#">Política de privacidad</a>
+                        <a class="link-secondary text-decoration-none" href="#">Preguntas frecuentes</a>
                     </div>
                 </div>
 
+                <div class="col-12 col-sm-12 col-md-4 footer-item-2">
+                    <ul class="nav d-flex justify-content-start justify-content-md-end align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary fs-5 ps-0 py-0" href="#" target="_blank"><i
+                                        class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link link-secondary fs-5 ps-1 py-0" href="#"
+                                    target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                        <li class="nav-item"><a class="nav-link link-secondary fs-5 ps-1 py-0" href="#"
+                                    target="_blank"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link link-secondary fs-4 ps-1 pe-0 py-0" href="#"
+                                    target="_blank"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <div class="container-lg pe-2">
+            <p class="text-secondary"><a href="index.html" class="navbar-brand d-flex fs-4 fw-bold text-decoration-none">
+                <span class="text-secondary fw-bolder">MY</span><span
+                    class="fw-bolder text-secondary">Movies</span>
+            </a><span> Desarrollado por <a class="link-secondary fw-bolder text-decoration-none" href="#">Mauricio Amigó</a> </span></p>
         </div>
     </footer>
 
